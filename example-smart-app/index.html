@@ -10,8 +10,8 @@
 
   </head>
   <body>
-    <div id='errors'>
-    </div>
+    <!-- <div id='errors'>
+    </div> -->
      <script>
     FHIR.oauth2.init({
     	client_id: "9672cb0b-acff-4aad-9614-ee1aa9cbfe8b",
@@ -19,11 +19,11 @@
 	}).then(client => {
 			console.log(client)
 			console.log(JSON.stringify(client, null, 2))
-      alert("Initialized!" + JSON.stringify(client))
-      $('#smart').html(JSON.stringify(client));
+      alert("Initialized!")
+      $('#error').html(JSON.stringify(client));
 		});
 	 </script>
-    <div id='smart'>
+    <div id='error'>
     </div>
     <!-- <div id='holder' >
       <h2>Example-SMART-App</h2>
