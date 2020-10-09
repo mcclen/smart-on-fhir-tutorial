@@ -19,10 +19,11 @@
 	}).then(client => {
 			console.log(client)
 			console.log(JSON.stringify(client, null, 2))
-			alert("Initialized!" + JSON.stringify(client))
+      alert("Initialized!")
+      $('#errors').html(JSON.stringify(client));
 		});
 	 </script>
-    <div id='holder' >
+    <!-- <div id='holder' >
       <h2>Example-SMART-App</h2>
 
       <h2>Patient Resource</h2>
@@ -99,5 +100,6 @@
           $('#errors').html('<p> Failed to call FHIR Service </p>');
         }
       );
-    </script>  </body>
+    </script> -->
+  </body>
 </html>
