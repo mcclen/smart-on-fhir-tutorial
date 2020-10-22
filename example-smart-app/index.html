@@ -21,7 +21,7 @@
 			console.log(client)
 			console.log(JSON.stringify(client, null, 2))
 	    		let clientString = JSON.stringify(client);
-	    window.location.href = "altais://electron-enable.altais.com"
+	    window.location.href = "altais://electron-enable.altais.com?smart="+clientString
       $('#smart').html(clientString);
 		});
 	 </script>
