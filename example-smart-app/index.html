@@ -18,13 +18,13 @@
     	client_id: "9672cb0b-acff-4aad-9614-ee1aa9cbfe8b",
     	scope    : "openid fhirUser profile patient/*.read"
 	}).then(client => {
-			console.log(client)
-			console.log(JSON.stringify(client, null, 2))
-	    		let clientString = JSON.stringify(client);
-	    window.location.href = "altais://electron-enable.altais.com?smart="+clientString
-      $('#smart').html(clientString);
-		});
-	 </script>
+		console.log(client)
+		console.log(JSON.stringify(client, null, 2))
+		let clientString = JSON.stringify(client);
+		window.location.href = "altais://electron-enable.altais.com?smart="+clientString
+		$('#smart').html(clientString);
+	});
+	</script>
     <div id='smart'>
     </div> 
 	<!--  <a href="altais://electron-enable.altais.com">open in altais</a> -->
