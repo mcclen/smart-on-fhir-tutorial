@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel='stylesheet' type='text/css' href='./src/css/example-smart-app.css'>
+    <title>Example-SMART-App</title>
+    <script src="./lib/js/fhir.js"></script>
+  </head>
+  <body>
+    <script>
+    setTimeout(function () {
+	  	FHIR.oauth2.authorize({
+	       	"redirect_uri" : "https://mcclen.github.io/smart-on-fhir-tutorial/example-smart-app/index.html",
+		    "client_id": "a4885cc5-540b-4eb2-9079-532871fdf510",
+		    "scope": "launch"
+		})
+    }, 4000)
+
+	</script> 
+
+  </body>
+</html>
