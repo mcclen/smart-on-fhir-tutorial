@@ -7322,7 +7322,7 @@ if (!USE_NATIVE_URL && typeof $fetch == 'function' && typeof Headers == 'functio
       if (arguments.length > 1) {
         init = arguments[1];
 init.headers = init.headers || {}
-// init.headers["Epic-Client-ID"] = "9672cb0b-acff-4aad-9614-ee1aa9cbfe8b"
+init.headers["Epic-Client-ID"] = "9672cb0b-acff-4aad-9614-ee1aa9cbfe8b"
         if (isObject(init)) {
           body = init.body;
           if (classof(body) === URL_SEARCH_PARAMS) {
@@ -8900,7 +8900,7 @@ var irrelevant = (function (exports) {
       request.headers.forEach(function(value, name) {
         xhr.setRequestHeader(name, value);
       });
-//  xhr.setRequestHeader("Epic-Client-ID", "9672cb0b-acff-4aad-9614-ee1aa9cbfe8b");
+ xhr.setRequestHeader("Epic-Client-ID", "9672cb0b-acff-4aad-9614-ee1aa9cbfe8b");
 
       if (request.signal) {
         request.signal.addEventListener('abort', abortXhr);
